@@ -273,7 +273,7 @@
                           <li><a href='../blog/postagem.php?id_post=" . $linha['id_postagem'] . "' target='_blank'>" . $linha['titulo'] . "</a>
                           <div class='clear'>
                           </div>
-                          <span class='date'><i class='icon-calendar'></i>" . $linha['data'] . "</span>
+                          <span class='date'><i class='icon-calendar'></i>" . date('d/m/Y', strtotime($linha['data'] )). "</span>
                           <span class='comment'><i class='icon-comment'></i> " . $linha_comentario['contagem'] . " Comentários</span>
                         </li>
                     ";
